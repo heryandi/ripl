@@ -10,9 +10,7 @@ setup(
     author='Brandon Heller',
     author_email='brandonh@stanford.edu',
     packages=find_packages(exclude='test'),
-    long_description="""\
-Insert longer description here.
-      """,
+    long_description=open('README').read(),
       classifiers=[
           "License :: OSI Approved :: GNU General Public License (GPL)",
           "Programming Language :: Python",
@@ -24,5 +22,6 @@ Insert longer description here.
       license='GPL',
       install_requires=[
         'setuptools',
+        'mininet',
         'networkx'
       ])
